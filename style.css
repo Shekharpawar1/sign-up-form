@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: #eee;
+}
+
+.side-img {
+    background: black;
+    background: url("background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+
+.logo {
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    width: 50vw;
+    padding: 0rem 10rem;
+
+}
+
+img[src] {
+    width: 10rem;
+    padding: 1rem;
+}
+
+h1 {
+    padding: 3.5rem .5rem;
+    color: rgb(213, 209, 209);
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.credit {
+    color: rgb(227, 224, 224);
+    background: rgba(0, 0, 0, .8);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 27rem;
+    font-weight: 300;
+
+}
+
+.form-area{
+    display:flex;
+    width:50vw;
+    box-shadow: 0 0 8px black;
+    flex-flow: row wrap;
+    gap:2;
+    height: 17rem;
+    background-color: #fff;
+}
+form,.form-items{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    align-items: flex-start;
+    
+    
+    padding:.5rem;
+   
+
+
+   
+}
+
+input{
+    height: 1.7rem;
+    width: 15rem;
+    
+    margin-top:.5rem;
+    font-size:1.2rem ;
+    border: none;
+    padding-left: 1rem;
+    border-radius: .5rem;
+    outline:none;
+    border-bottom:1px solid ;
+    /* border:none;
+    outline:none;
+    border-bottom:1px solid black; */
+}
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+
+}
+a{
+    color:rgb(214, 36, 214) ;
+    text-decoration: none;
+}
+button{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    height: 3rem;
+    color:white;
+    /* width: 10rem; */
+    outline: none;
+    border: none;
+    padding:.2rem 1rem .5rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    box-shadow: 0 0 5px black;
+    background-color:rgb(214, 36, 214);
+    
+}
+h2,h3{
+    letter-spacing: .2rem;
+    font-weight: 300;
+    margin-left: 4rem;
+    padding-top:1rem;
+}
+.random-text{
+    margin-top: 5rem;
+}
+p {
+    padding: 3rem;
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+input:focus {
+    
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    
+  }
+  
+input:invalid:focus {
+    border: 2px solid rgb(255, 69, 100)
+  }
+  
+input:valid:focus {
+    border: rgb(0, 183, 255) 2px solid;
+  }

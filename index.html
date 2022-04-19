@@ -1,33 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <main>
-        <div class="side-img">
-            <!-- <img src="kellen-ri" alt=""> -->
-            <div class="logo">
-                <img src="odin-lined.png" alt="">
-                <h1>Sign-up</h1>
-            </div>
-            <div class="credit">
-                <h2>Photo by Kellen Riggin </h2>
+        <div class="logo-section">
+            <div class="side-img">
+                <div class="logo">
+                    <img src="odin-lined.png" alt="odin">
+                    <h1>Sign up</h1>
+                </div>
+
             </div>
         </div>
-        <div class="sign-up">
-            <p>
-                
-            </p>
-            <form action="#">
+        <div class="hero-section">
+            <p class="random-text"><strong>This is not a real service!</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ipsa sunt eaque quasi. Laborum, dicta! Tenetur quo odit voluptas mollitia quis.</p>
+            <div class="form-area">
+                <h2>Let's do this</h2>
+                <form id="form" action="#" method="POST">
 
-            </form>
+
+                    
+                    <div class="form-items">
+
+                        <label for="fname">
+                            First Name
+                        </label>
+                        <input type="text" id="fname">
+                    </div>
+                    <div class="form-items">
+                        <label for="lname">
+                            Last Name
+                        </label>
+                        <input type="text" id="lname">
+                    </div>
+                    <div class="form-items">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-items">
+                        <label for="tel">
+                            Contact no.
+                        </label>
+                        <input type="text" id="tel">
+                    </div>
+                    <div class="form-items">
+                        <label for="passwd">
+                            Password
+                        </label>
+                        <input type="password" id="passwd">
+                    </div>
+                    <div class="form-items">
+                        <label for="passwd2">
+                            Confirm Password
+                        </label>
+                        <input type="password" id="passwd2">
+                    </div>
+                </form>
+            </div>
+            <button id="btn" type="submit">Create Account</button>
+            <h3>ALREADY HAVE AN ACCOUNT?<a href="/login">LOGIN</a></h3>
         </div>
     </main>
-    
+    <script src="index.js"></script>
+
 </body>
+
 </html>
